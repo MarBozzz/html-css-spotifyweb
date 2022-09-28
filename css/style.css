@@ -3,3 +3,233 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  height: calc(100vh - 90px);
+}
+
+.container{
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.sidebar .container {
+  max-width: 90%;
+  margin: 0 0 0 1rem;
+}
+
+/*UTILITIES*/
+.d-flex{
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-dir-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-a-center {
+  text-align: center;
+}
+
+.p-3 {
+  padding: 3rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-text-grey {
+  color: #A3A3A3;
+}
+
+.col-text-white {
+  color: #FFFFFF;
+}
+
+.debug{
+  background-color: rgba(255,0,0,.25);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+
+
+
+
+/*HEADER*/
+
+header {
+  height: 90px;
+  width: calc(100% - 230px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #0084FD;
+}
+
+
+
+.sidebar {
+  width: 230px;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: #000000;
+}
+
+.navbar li {
+  padding-bottom: .7rem;
+}
+
+.navbar li span, .download-app span {
+  font-size: .8rem;
+}
+
+.navbar .logo img {
+  width: 8.5rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.navbar img {
+  width: 1.7rem;
+  vertical-align: middle;
+}
+
+.playlist a {
+  color: #A3A3A3;
+}
+
+.playlist li {
+  line-height: 2rem;
+  font-size: .8rem;
+}
+
+.playlist li:first-child {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.playlist li:nth-child(2) {
+  padding-bottom: .8rem;
+}
+
+
+.playlist .add-playlist {
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+.playlist .add-playlist+span{
+  font-size: 1rem;
+}
+
+.download-app a {
+  font-size: .7rem;
+}
+
+.download-app a::after {
+  content: "";
+  display: block;
+  width: 190px;
+  border: 1px solid #A3A3A3;
+  margin: .8rem 0;
+}
+
+
+
+
+.profile a {
+
+}
+
+
+.profile img {
+  width: .9rem;
+  border: 1px solid black;
+  /*vertical-align: middle;*/
+}
+
+/*.sidebar {
+  width: 230px;
+  min-height: calc(100vh - 90px);
+  position: fixed;
+  top: 0; 
+  left: 0;
+}*/
+
+
+/*main*/
+
+main {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  padding-top: 90px;
+}
+/*main {
+  height: calc(100vh - 180px);
+  margin-left: 230px;
+  overflow: scroll;
+}*/
+/*.col*/ .card {
+  min-width: calc(100% / 6);
+  /*min-width: 100px;*/
+  padding: 5px;
+
+}
+
+
+
+.photo-album {
+    /*debug*/
+    /*width: 200px;*/
+    height: 300px;
+}
+
+
+
+/*footer*/
+footer {
+  height: 90px;
+  background-color: #333333;
+  bottom: 0;
+  left: 0;
+}
