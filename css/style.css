@@ -16,7 +16,7 @@ body {
 
 .container {
   /*height: 100%;*/
-  max-width: 95%;
+  max-width: 97%;
   margin: 0 auto;
 }
 
@@ -62,8 +62,12 @@ img {
   text-align: center;
 }
 
-.p-3 {
-  padding: 3rem 0;
+.p-2 {
+  padding: 2.5rem 0 0 0;
+}
+
+.p-left {
+  padding-left: .5rem;
 }
 
 ul {
@@ -237,6 +241,7 @@ main {
 
 .main-menu {
   height: 3rem;
+  align-items: center;
 }
 
 .main-menu ul li a {
@@ -247,18 +252,25 @@ main {
   font-weight: 800;
 }
 
+section .row h3 {
+  font-size: .95rem;
+}
+
+section h4 {
+  font-size: .7rem;
+  color: #7D7F84;
+  padding-top: .7rem;
+}
+
 .card {
-  min-width: calc(100% / 6);
-  /*min-width: 100px;*/
-  padding: 5px;
+  width: calc(100% / 6);
+  padding: .5rem;
+  margin-top: 1.5rem;
 }
 
-.photo-album {
-  /*debug*/
-  /*width: 200px;*/
-  height: 300px;
+.photo-album img {
+  object-fit: cover;
 }
-
 
 
 /*footer*/
@@ -267,12 +279,36 @@ footer {
   background-color: #282828;
 }
 
+.footer-left {
+  width: 15%;
+  height: 50%;
+}
+.footer-center {
+  width: 40%;
+  height: 50px;
+}
+.footer-right {
+  width: 15%;
+  height: 50%;
+}
+
+
 
 
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 991px) {
+  .card {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .card {
+    width: calc(100% / 2);
+  }
 
   header {
     width: calc(100% - 50px);
@@ -286,7 +322,7 @@ footer {
     margin: 0;
   }
 
-  .sidebar .container, .sidebar-top, .navbar, ul, li, a {
+  .sidebar .container, .sidebar-top, .sidebar .navbar, .sidebar ul, .sidebar li, .sidebar a {
     width: 100%;
   }
 
