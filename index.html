@@ -14,93 +14,97 @@
 
 <body>
 
-  
-
   <div class="wrapper d-flex">
 
-    
-
-    <div class="sidebar d-flex">
+    <div class="sidebar d-flex ">
 
       <div class="container d-flex flex-dir-column space-between">
 
-        <nav class="navbar d-flex flex-dir-column">
-          <ul>
-            <li>
-              <a class="logo" href="#">
-                <img src="/img/logo.svg" alt="">
-              </a>
-            </li>
-            <li>
-              <a class="home col-text-white" href="#">
-                <img src="/img/home.svg" alt="Home">
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a class="search" href="#">
-                <img src="/img/search.svg" alt="Home">
-                <span class="col-text-grey">Cerca</span>
-              </a>
-            </li><li>
-              <a class="library" href="#">
-                <img src="/img/libreria.svg" alt="">
-                <span class="col-text-grey">La tua libreria</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-  
-        <nav class="playlist d-flex flex-dir-column">
-          <ul>
-            <li>
-              Playlist
-            </li>
-            <li>
+        <div class="sidebar-top">
+
+          <nav class="navbar">
+            <ul>
+              <li class="d-flex">
+                <a class="logo" href="#">
+                  <img src="img/logo.svg" alt="Logo grande">
+                  <img src="img/logo-small.svg" alt="Logo piccolo">
+                </a>
+
+              </li>
+              <li>
+                <a class="home col-text-white" href="#">
+                  <img src="/img/home.svg" alt="Home">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a class="search" href="#">
+                  <img src="/img/search.svg" alt="Home">
+                  <span class="col-text-grey">Cerca</span>
+                </a>
+              </li><li>
+                <a class="library" href="#">
+                  <img src="/img/libreria.svg" alt="">
+                  <span class="col-text-grey">La tua libreria</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="playlist">
+            <h4>Playlist</h4>
+            <div class="new-playlist">
               <a href="#">
                 <i class="add-playlist fa-solid fa-square-plus"></i>
                 <span>&ensp;Crea Playlist</span>
               </a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-            <li>
-              <a href="#">Nome Playlist</a>
-            </li>
-  
-          </ul>
-        </nav>
-  
-        <div class="d-flex flex-dir-column">
-  
-          <div class="download-app">
-            <a class="col-text-grey" href="#">
-              <i class="fa-regular fa-circle-down"></i>
-              <span>&ensp;Installa app</span>
-            </a>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+      
+              </ul>
+            </nav>
           </div>
-  
-          <div class="profile">
-            <a class="col-text-white" href="#">
-              <img src="/img/profile.svg" alt="icona profilo">
-              <span>John Doe</span>
-            </a>
+        </div>
+
+        <div class="sidebar-bottom d-flex flex-dir-column space-between">
+
+
+          <div class="user d-flex flex-dir-column">
+            <div class="download-app">
+              <a class="col-text-grey" href="#">
+                <i class="fa-regular fa-circle-down"></i>
+                <span>&ensp;Installa app</span>
+              </a>
+            </div>
+    
+            <div class="profile">
+              <a class="col-text-white" href="#">
+                <img src="/img/profile.svg" alt="icona profilo">
+                <span>&ensp;John Doe</span>
+              </a>
+            </div>
           </div>
   
         </div>
@@ -113,23 +117,23 @@
 
     <header class="d-flex flex-end align-center">
       <div class="btn">
-        <a href="#">Button</a>
+        <a href="#">Effettua l'upgrade</a>
       </div>
     </header>
 
     
-    <main class="debug">
+    <main class="">
 
       <div class="container">
 
-        <nav class="main-menu debug d-flex justify-center align-center">
-          <ul class="d-flex   flex-wrap">
-            <li><a href="#">IN EVIDENZA</a></li>
-            <li><a href="#">IN EVIDENZA</a></li>
-            <li><a href="#">IN EVIDENZA</a></li>
-            <li><a href="#">IN EVIDENZA</a></li>
-            <li><a href="#">IN EVIDENZA</a></li>
-            <li><a href="#">IN EVIDENZA</a></li>
+        <nav class="main-menu d-flex justify-center align-center">
+          <ul class="d-flex flex-wrap">
+            <li><a href="#">In evidenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e mood</a></li>
+            <li><a href="#">Nuove uscite</a></li>
+            <li><a href="#">Scopri</a></li>
           </ul>
         </nav>
   
@@ -225,7 +229,10 @@
   </div>
   
 
-  <footer>Footer</footer>
+  <footer>
+
+  </footer>
   
 </body>
+
 </html>
